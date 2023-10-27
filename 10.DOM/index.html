@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM</title>
+    <style>
+        .heading{
+            background-color: black;
+        }
+        .heading[self_attr="khadija"]{
+            color: red;
+        }
+        .heading[self_attr="zaeem"]{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Hello from html DOM
+    </h1>
+
+    <section id="main">
+        <div id="main-child-1">
+            <h1 class="heading" self_attr="khadija" align="center">
+                Hello from first div
+            </h1>
+            <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam vitae dolore aspernatur illum minima totam quos! Ducimus maxime tempore aliquam culpa, voluptates autem!
+            </p>
+        </div>
+        <div id="main-child-2">
+            <h1 class="heading" self_attr="zaeem">
+                Hello from second div
+                <span>zaeem</span>
+            </h1>
+            <div class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat facere rem at, recusandae dolorum tempora repellendus vel iusto a, odit adipisci sint ut ullam voluptatem magni in aspernatur debitis, atque deserunt nobis saepe! Distinctio.
+            </div>
+        </div>
+    </section>
+    <script>
+        // finding an element
+        // let elements_by_class_name = document.getElementsByClassName("heading");
+        // console.log(elements_by_class_name);
+        // let element_by_id = document.getElementById("main");
+        // console.log(element_by_id);
+        // let element_by_tag_name = document.getElementsByTagName("section");
+        // console.log(element_by_tag_name);
+
+        // changing html element
+        // element_by_id.innerHTML = "<h3>Hellllllllo</h3>"
+        // elements_by_class_name[0].align = "right"
+        // elements_by_class_name[0].style.fontWeight = 100
+        // elements_by_class_name[0].setAttribute("self_attr","ali");
+        // console.log(elements_by_class_name[0]);
+
+        // adding or deleting html element.
+        // let my_heading = document.createElement("h1");
+        // my_heading.innerText = "Hello from my heading"
+        // let my_paragraph = document.createElement("p");
+        // my_paragraph.innerText = "hello from my paragraph";
+        // element_by_id.appendChild(my_heading);
+        // element_by_id.append(my_paragraph);
+        // element_by_id.removeChild(my_heading);
+        // element_by_id.replaceChild(my_heading,my_paragraph);
+        // console.log(my_heading);
+        // console.log(my_paragraph);
+
+    </script>
+</body>
+</html>
