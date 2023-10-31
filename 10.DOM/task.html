@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task for event handlers</title>
+  </head>
+  <body>
+    <div id="btns">
+      <button class="my-btn">hello</button>
+      <button class="my-btn">hello1</button>
+      <button class="my-btn">hello2</button>
+      <button class="my-btn">hello3</button>
+      <button class="my-btn">hello4</button>
+      <button class="my-btn">hello5</button>
+      <button class="my-btn">hello6</button>
+      <button class="my-btn">hello7</button>
+      <button class="my-btn">hello8</button>
+    </div>
+    <div ">
+
+    </div>
+  </body>
+  <script>
+    let btn = document.getElementsByClassName("my-btn");
+    Array.from(btn).forEach((element, index) => {
+      element.addEventListener("click", exe);
+    });
+    function exe() {
+      document.getElementById("btns").innerHTML += `<button class="my-btn">new button</button>`
+      let btn = document.getElementsByClassName("my-btn");
+    Array.from(btn).forEach((element, index) => {
+      element.addEventListener("click", exe);
+    });
+    }
+  </script>
+</html>

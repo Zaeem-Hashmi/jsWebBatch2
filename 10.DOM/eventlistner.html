@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div>
+            <h1>
+                Hello from first div
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta sunt error modi voluptatum pariatur. Corrupti velit facilis ipsum eaque neque pariatur impedit at?
+            </p>
+        </div>
+        <div>
+            <h1>
+                Hello from second div
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et, consectetur quas voluptas earum reiciendis vitae repudiandae ducimus mollitia, sapiente veritatis soluta numquam?
+            </p>
+        </div>
+        <div>
+            <button onclick="exe()">
+                click me
+            </button>
+            <button id="my-btn">
+                click me 2
+            </button>
+        </div>
+    </section>
+
+    <script>
+        function exe() {
+            alert("button click");
+        }
+        document.getElementById("my-btn").addEventListener("click",()=>{
+            alert("button 2");
+        });
+    </script>
+</body>
+</html>
