@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Callback</title>
+</head>
+<body>
+    <h1>
+        Hello from js callback
+    </h1>
+
+    <script>
+        let num = [10,30,-3,56,-9,-2];
+
+        let myFun = (x)=>{
+            return x>=0
+        };
+        let positive = removeNeg(num,myFun);
+
+        function removeNeg(num,callback) {
+            let positiveNum = [];
+            for (const x of num) {
+                if (callback(x)) {
+                    positiveNum.push(x);
+                }
+            }
+            return positiveNum;
+        }
+        console.log(positive);
+    </script>
+</body>
+</html>

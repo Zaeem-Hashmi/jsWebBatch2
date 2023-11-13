@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fetch apis</title>
+  </head>
+  <body>
+    <h1>Hello from fetch methods</h1>
+    <div id="demo"></div>
+    <script>
+      // getText("https://api.publicapis.org/entries");
+
+      // function getText(file) {
+      //   let x = fetch(file);
+      //   console.log(x);
+      //   // let y = x.json();
+      //   // document.getElementById("demo").innerHTML = JSON.stringify(y);
+      //   //   x.then(
+      //   //     result=>console.log(result.json().then(res=>console.log(res.entries)).catch(console.log("error in response")))
+      //   //   ).catch(
+      //   //     console.log("something went wrong")
+      //   //   )
+      // }
+
+      // 1.promises in js
+      // function getText(url) {
+      //  let fetchCall =  fetch(url);
+      //  fetchCall.then(
+      //   (result)=>{
+      //     let response = result.json();
+      //     response.then(
+      //       (result)=>{
+      //         console.log(result);
+      //       }
+      //     )
+      //   }
+      //  ).catch(
+      //   (result)=>{
+      //     console.log(1);
+      //     console.log(result);
+      //   }
+      //  )
+      // }
+      // getText("https://api.publicapis.org/entries")
+
+      // async function getText(url) {
+      //   let fetchCall = await fetch(url);
+      //   let data = await fetchCall.json();
+      //   Promise.all([fetchCall, data]).then((value) => {
+      //     console.log(value);
+      //   }).catch(
+      //     (error)=>{
+      //       console.log(error);
+      //     }
+      //   );
+      // }
+      getText("https://api.publicapis.org/entries");
+    </script>
+  </body>
+</html>
