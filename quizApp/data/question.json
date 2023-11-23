@@ -1,0 +1,42 @@
+[
+    {
+        "question":"What is HTML?",
+        "options":[
+            "Hyper Text Markup Language",
+            "Hyper Text Markup ",
+            "Hyper Text Makeup Language",
+            "Hyper Markup Language"
+        ],
+        "correct_ans":0
+    },
+    {
+        "question":"What is CSS?",
+        "options":[
+            "Styling Sheet",
+            "Cascading Style Sheet",
+            "Sudo Style sheet",
+            "none"
+        ],
+        "correct_ans":1
+    },
+    {
+        "question":"What is JS?",
+        "options":[
+            "JavaScript",
+            "JavaSnippet",
+            "JavaSnal",
+            "none"
+        ],
+        "correct_ans":0
+    },
+    {
+        "question":"What is php?",
+        "options":[
+            "Programming house php",
+            "Hypertext Pre Processor",
+            "none",
+            "all of these"
+        ],
+        "correct_ans":1
+    }
+]
